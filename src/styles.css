@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('../node_modules/bootstrap/dist/css/bootstrap.css');
 body{
-  columns: #c8c8c8;
+  color: #c8c8c8;
   background-color: #272b30;
 }
 
