@@ -4,7 +4,7 @@
     <input [(ngModel)]="filterBy" name="queryform" id="queryform"/>
   </form>
   <div class="row">
-    <section *ngFor="let show of filteredShows" class="col-12 col-sm-6 col-lg-3 mb-4 border mr-2" (click)="onSelected()">
+    <section *ngFor="let show of filteredShows" class="col-12 col-sm-6 col-lg-3 mb-4 border mr-2" (click)="onSelected(show)">
       <div id="showPallets">
         <h3>{{show.title | uppercase}}</h3>
         <h4>Directed by {{show.director | lowercase}}</h4>

@@ -11,11 +11,11 @@ export type Show = {
   director: string;
   producer: string;
   release_date: string;
-  characters: People[];
-  planets: Planet[];
-  starships: Starship[];
-  vehicles: Vehicle[];
-  species: Specie[];
+  characters: string[];
+  planets: string[];
+  starships: string[];
+  vehicles: string[];
+  species: string[];
   created: string;
   edited: string;
   url: string;

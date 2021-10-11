@@ -52,7 +52,8 @@ export class ShowComponent implements OnInit, OnDestroy {
     }
   }
 
-  public onSelected(): void{
+  public onSelected(selectedShow: Show): void{
+    this.showService.show = selectedShow;
     this.route.navigateByUrl('/film')
     //console.log('selected film');
 

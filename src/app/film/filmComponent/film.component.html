@@ -1,8 +1,19 @@
-<section class="card bg-dark">
+<article class="card bg-dark">
   <section class="card-header">
     <span>{{title}}</span>
   </section>
   <section class="card-body">
-    
+      <div *ngIf="show">
+          <h3>{{show.title}}</h3>
+          <p>{{show.opening_crawl}}</p>
+          <h5>This film is produced by {{show.producer}}</h5>
+          <h5>Release date {{show.release_date}}</h5>
+          <h5>Starling..</h5>
+          <div *ngIf="characters.length">
+            <ul *ngFor="let character of characters">
+              <li><span>{{character.name}}</span></li>
+            </ul>
+          </div>
+      </div>
   </section>
-</section>
+</article>

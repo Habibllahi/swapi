@@ -9,6 +9,7 @@ import { PlanetModule } from './planet/planet.module';
 import { StarshipModule } from './starship/starship.module';
 import { SharedModule } from './shared/shared.module';
 import { ShowsModule } from './shows/shows.module';
+import { FilmModule } from './film/film.module';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { ShowsModule } from './shows/shows.module';
     PeopleModule,
     PlanetModule,
     StarshipModule,
-    ShowsModule
+    ShowsModule,
+    FilmModule
   ],
   providers: [],
   bootstrap: [AppComponent]

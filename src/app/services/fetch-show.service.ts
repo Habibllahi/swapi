@@ -10,6 +10,7 @@ import { Observable } from 'rxjs';
 })
 export class FetchShowService {
   private showUri = "https://swapi.dev/api/films"
+  private _show!: Show;
   constructor(private http: HttpClient) { }
 
   public fetchShows():Observable<Show[]>{
@@ -17,4 +18,14 @@ export class FetchShowService {
         return value.results;
      }))
   }
+
+  public set show(value: Show){
+    this._show = value;
+  }
+
+
+  public get show()  {
+    return this._show;
+  }
+
 }
