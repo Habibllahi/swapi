@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Link } from './type/Link';
 
 @Component({
@@ -6,7 +6,7 @@ import { Link } from './type/Link';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   public title = 'swapi';
   public links: Link[] = [
     {
@@ -23,7 +23,8 @@ export class AppComponent {
   }
   ]
 
-  public titleSetter(title:string){
-    this.title = title;
+  constructor(){}
+  ngOnInit(): void {
   }
+
 }
