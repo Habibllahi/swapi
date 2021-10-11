@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Link } from './type/Link';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'swapi';
+  public title = 'swapi';
+  public links: Link[] = [
+    {
+      url: '/shows',
+      fragment: 'shows'
+    },
+    {
+    url: '/film',
+    fragment: 'film'
+  },
+  {
+    url: '/planet',
+    fragment: 'planet'
+  },
+  {
+    url: 'starship',
+    fragment: 'starship'
+  }
+  ]
 }

@@ -3,6 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { PeopleModule } from './people/people.module';
+import { PlanetModule } from './planet/planet.module';
+import { StarshipModule } from './starship/starship.module';
+import { SharedModule } from './shared/shared.module';
+import { ShowsModule } from './shows/shows.module';
+
 
 @NgModule({
   declarations: [
@@ -10,7 +17,13 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule,
+    SharedModule,
+    PeopleModule,
+    PlanetModule,
+    StarshipModule,
+    ShowsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,12 @@
+<article role="article">
+  <div *ngFor="let show of shows">
+    <div>
+      <h3>Tile: {{show.title}}</h3>
+      <h4>Director: {{show.director}}</h4>
+      <h4>Producer: {{show.producer}}</h4>
+      <span class="mr-2">Released on: {{show.release_date}}</span>
+      <span class="mr-2"></span>
+      <p>Crawl: {{show.opening_crawl}}</p>
+    </div>
+  </div>
+</article>
