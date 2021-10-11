@@ -13,10 +13,6 @@ export class AppComponent {
       url: '/shows',
       fragment: 'shows'
     },
-    {
-    url: '/film',
-    fragment: 'film'
-  },
   {
     url: '/planet',
     fragment: 'planet'
@@ -26,4 +22,8 @@ export class AppComponent {
     fragment: 'starship'
   }
   ]
+
+  public titleSetter(title:string){
+    this.title = title;
+  }
 }

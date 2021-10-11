@@ -1,7 +1,7 @@
 <section class="card bg-dark" role="main">
   <header class="card-header">
     <nav class="navbar navbar-expand navbar-dark bg-dark">
-      <a class="navbar-brand">{{title}}</a>
+      <a class="navbar-brand">{{title | uppercase}}</a>
       <ul class="nav nav-pills">
         <li *ngFor="let link of links" class="mr-2">
           <a [routerLink]="[link.url]" routerLinkActive="router-link-active" [routerLinkActiveOptions]="{exact:true}">
@@ -15,6 +15,6 @@
     <router-outlet></router-outlet>
   </main>
   <footer class="card-footer">
-    
+    Tinuda Inc. code assesment submitted by Hamzat Habibllahi Adewale
   </footer>
 </section>
